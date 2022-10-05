@@ -34,13 +34,13 @@ a{
   padding: 0 80px;
 }
 .section-1{
-  height: 100vh;
+  height: calc(100vh - 100px);
   background-color: blue;
 }
 .section-1 img{
   width: 100%;
 }
 .section-2{
-  height: 100vh;
+  height: calc(100vh - 100px);
   background-color: red;
 }
