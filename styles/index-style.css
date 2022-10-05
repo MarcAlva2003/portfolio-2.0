@@ -1,0 +1,46 @@
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-snap-type: y mandatory;
+}
+*, *:before, *:after{
+  box-sizing: inherit;
+}
+body{
+  font-size: 16px;
+  /* transition: all .8s linear; */
+  background-color: #222222;
+  font-family: 'Raleway', sans-serif;
+}
+a{
+  text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+a{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.body-container{
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 80px;
+}
+.section-1{
+  height: 100vh;
+  background-color: blue;
+}
+.section-1 img{
+  width: 100%;
+}
+.section-2{
+  height: 100vh;
+  background-color: red;
+}
