@@ -1,0 +1,79 @@
+.section-2{
+  /* background-color: red; */
+  display: flex;
+  flex-direction: column;
+  padding: 100px 0;
+  /* height: min(600px, calc(100vh - 100px)); */
+}
+.section-2-title{
+  margin-bottom: 60px;
+  font-size: 32px;
+}
+.section-2-pagination{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.section-2-projects{
+  width: 100%;
+  height: 100%;
+  padding: 60px 0;
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+.swiper-slide{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 50px;
+}
+.swiper-slide-right-image-container img{
+  border-radius: 12px;
+  overflow: hidden;
+}
+.swiper-slide-left-title{
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.swiper-slide-left-subtitle{
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 12px;
+}
+.swiper-slide-left-text{
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 400;
+  margin-bottom: 38px;
+}
+.swiper-slide-left-separator{
+  margin-bottom: 38px;
+  height: 1px;
+  width: 150px;
+  background-color: #FFFFFF80;
+}
+.swiper-slide-left-links{
+  display: flex;
+}
+.swiper-slide-left-links .project-link{
+  margin-right: 12px;
+}
+.section-2-pagination--left{
+  margin-right: 12px;
+}
+.section-2-pagination--left svg{
+  margin-right: 4px;
+}
+
+.project-countries-slide .swiper-slide-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.project-countries-slide .swiper-slide-right{
+  display: flex;
+  align-items: center;
+}

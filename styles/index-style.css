@@ -24,16 +24,66 @@ p,
 a{
   margin: 0;
   padding: 0;
+  color: #FFFFFF;
 }
-
-
-
+img{
+  max-width: 100%;
+}
 .body-container{
   width: 100%;
   max-width: 1440px;
   padding: 0 80px;
+  margin: 0 auto;
 }
-.section-1{
+.project-link-content{
+  padding: 0 30px;
+  height: 40px;
+  border-radius: 8px;
+  border: 1px solid #FFFFFF;
+  transition: background-color .3s ease;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+}
+.project-link-content:hover{
+  background-color: #FFFFFF20;  
+}
+.project-link-content:active{
+  background-color: #FFFFFF40;  
+}
+.pagination-button{
+  height: 37px;
+  width: 37px;
+  background-color: #222222;
+  border-radius: 4px;
+  border: 1px solid #FFFFFF;
+  display: flex;
+  align-items: center;
+  transition: background-color .2s ease;
+  justify-content: center;
+}
+.pagination-button:hover{
+  cursor: pointer;
+  background-color: #FFFFFF20;  
+}
+.pagination-button:active{
+  background-color: #FFFFFF40;  
+}
+.pagination-button-disabled{
+  background-color: #666666;  
+  border: none;
+}
+.pagination-button-disabled svg{
+  stroke: #ffffff50;
+}
+.pagination-button-disabled:hover{
+  background-color: #666666;  
+  cursor: default;
+}
+.pagination-button-disabled:active{
+  background-color: #666666;   
+}
+/* .section-1{
   height: calc(100vh - 100px);
   background-color: blue;
 }
@@ -43,4 +93,4 @@ a{
 .section-2{
   height: calc(100vh - 100px);
   background-color: red;
-}
+} */
