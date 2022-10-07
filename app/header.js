@@ -4,6 +4,7 @@ let navResponsive = document.querySelector('.mobile-menu-responsive');
 let navResponsiveContainer = document.querySelector('.header-right--mobile-container');
 
 const openNavbar = () =>{
+  navResponsiveContainer.style["width"] = '100%'
   navResponsiveContainer.style["zIndex"] = '100'
   navResponsiveContainer.style["opacity"] = '1'
   navResponsive.style["marginLeft"] = "0px"
@@ -20,6 +21,7 @@ const closeNavbar = () =>{
     navResponsive.style["animation"] = "none"
     navResponsive.style["marginLeft"] = "-250px"
     navResponsiveContainer.style["zIndex"] = '-10'
+    navResponsiveContainer.style["width"] = '0'
     document.body.style.overflow ='visible';
   },200)
 }
