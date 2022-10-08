@@ -1,30 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;400;600&display=swap" rel="stylesheet">
   <title>Álvarez Marcos | PORTFOLIO</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/index-style.css">
   <link rel="stylesheet" href="styles/header-style.css">
+  <link rel="stylesheet" href="styles/section-1.css">
+  <link rel="stylesheet" href="styles/section-2.css">
+  <link rel="stylesheet" href="styles/section-3.css">
 </head>
+
 <body>
   <div class="header-background">
     <header class="header-content">
       <div class="header-left">
-        <a href="#" class="header-left--name"><p><span>Álvarez</span> Marcos</p></a>
+        <a href="#" class="header-left--name">
+          <p><span>Álvarez</span> Marcos</p>
+        </a>
       </div>
       <div class="header-right">
         <div class="header-right--mobile-container">
           <nav class="mobile-menu-responsive">
             <div class="header-right-name--mobile">
-              <a href="#" class="header-left--name"><p><span>Álvarez</span> Marcos</p></a>
+              <a href="#" class="header-left--name">
+                <p><span>Álvarez</span> Marcos</p>
+              </a>
             </div>
             <div class="header-right--mobile__closer" id="menu-closer">
-              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="28" height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-x" width="28" height="28"
+                viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+                stroke-linejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                 <line x1="18" y1="6" x2="6" y2="18" />
                 <line x1="6" y1="6" x2="18" y2="18" />
               </svg>
@@ -33,10 +45,10 @@
               <p class="header-right-item--link">Inicio</p>
               <div class="header-right-item--border-bottom"></div>
             </a>
-            <a class="header-right-item" href="">
+            <!-- <a class="header-right-item" href="">
               <p class="header-right-item--link">Sobre mi</p>
               <div class="header-right-item--border-bottom"></div>
-            </a>
+            </a> -->
             <a class="header-right-item" href="">
               <p class="header-right-item--link">Proyectos</p>
               <div class="header-right-item--border-bottom"></div>
@@ -53,7 +65,10 @@
         </div>
       </div>
       <div class="header-menu-button" id="menu-opener">
-        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24" style="fill: rgba(255, 255, 255, 1);"><path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 24 24"
+          style="fill: rgba(255, 255, 255, 1);">
+          <path d="M4 6h16v2H4zm0 5h16v2H4zm0 5h16v2H4z"></path>
+        </svg>
       </div>
     </header>
   </div>
@@ -65,13 +80,497 @@
         </div>
       </div>
       <div class="section-1-right">
-
+        <div class="section-1-right--title">
+          <p class="section-1-right--title__text text-type-1">Desarrollador Web Fullstack</p>
+        </div>
+        <div class="section-1-right--icons">
+          <div class="section-1-right--icons__icon -icon"><img src="images/section-1/js.png" alt="javascript-icon">
+          </div>
+          <div class="section-1-right--icons__icon -icon"><img src="images/section-1/typescript.png"
+              alt="typescript-icon"></div>
+          <div class="section-1-right--icons__icon -icon"><img src="images/section-1/react.png" alt="react-icon"></div>
+          <div class="section-1-right--icons__icon -icon"><img src="images/section-1/nextjs.png" alt="nextjs-icon">
+          </div>
+          <div class="section-1-right--icons__icon -icon"><img src="images/section-1/python.png" alt="python-icon">
+          </div>
+          <div class="section-1-right--icons__icon -icon"><img src="images/section-1/django.png" alt="django-icon">
+          </div>
+        </div>
       </div>
     </section>
-    <section class="section-2 section"></section>
-    <section></section>
+    <section class="section-2 section">
+      <div class="section-2-title">
+        <p class="text-type-1">Proyectos</p>
+      </div>
+      <div class="section-2-projects">
+        <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <!-- SLIDE -->
+            <div class="swiper-slide project-countries-slide">
+              <div class="swiper-slide-left">
+                <div class="swiper-slide-left-title" data-swiper-parallax="-300">
+                  <h3>Companies List</h3>
+                </div>
+                <div class="swiper-slide-left-subtitle" data-swiper-parallax="-200">
+                  <p>En desarrollo</p>
+                </div>
+                <div class="swiper-slide-left-separator"></div>
+                <div class="swiper-slide-left-text" data-swiper-parallax="-100">
+                  <p>
+                    La estoy realizando con Django y
+                    React. Es un CRUD de compañías que incluye endpoints privados y públicos,
+                    autenticación de usuario vía JWT, rutas privadas con React Routes y llamados a api
+                    con Axios
+                  </p>
+                </div>
+                <div class="swiper-slide-left-links">
+                  <a href="" class="project-link">
+                    <div class="project-link-content">
+                      <p class="project-link-text">Repo. Backend</p>
+                    </div>
+                  </a>
+                  <a href="" class="project-link">
+                    <div class="project-link-content">
+                      <p class="project-link-text">Repo. Frontend</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide-right">
+                <div class="swiper-slide-right-image-container" data-swiper-parallax="-300">
+                  <img src="images/section-2/companies-app.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- .SLIDE -->
+            <!-- SLIDE -->
+            <div class="swiper-slide project-countries-slide">
+              <div class="swiper-slide-left">
+                <div class="swiper-slide-left-title" data-swiper-parallax="-300">
+                  <h3>Countries List</h3>
+                </div>
+                <div class="swiper-slide-left-subtitle" data-swiper-parallax="-300">
+                  <p>Finalizada (24/03/2022)</p>
+                </div>
+                <div class="swiper-slide-left-separator"></div>
+                <div class="swiper-slide-left-text" data-swiper-parallax="-100">
+                  <p>
+                    La estoy realizando con Django y
+                    React. Es un CRUD de compañías que incluye endpoints privados y públicos,
+                    autenticación de usuario vía JWT, rutas privadas con React Routes y llamados a api
+                    con Axios
+                  </p>
+                </div>
+                <div class="swiper-slide-left-links">
+                  <a href="" class="project-link">
+                    <div class="project-link-content">
+                      <p class="project-link-text">Visitar</p>
+                    </div>
+                  </a>
+                  <a href="" class="project-link">
+                    <div class="project-link-content">
+                      <p class="project-link-text">Repositorio</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide-right">
+                <div class="swiper-slide-right-image-container" data-swiper-parallax="-300">
+                  <img src="images/section-2/countries-app.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- .SLIDE -->
+            <!-- SLIDE -->
+            <div class="swiper-slide project-countries-slide">
+              <div class="swiper-slide-left">
+                <div class="swiper-slide-left-title" data-swiper-parallax="-300">
+                  <h3>Countries List</h3>
+                </div>
+                <div class="swiper-slide-left-subtitle" data-swiper-parallax="-200">
+                  <p>En desarrollo</p>
+                </div>
+                <div class="swiper-slide-left-separator"></div>
+                <div class="swiper-slide-left-text" data-swiper-parallax="-100">
+                  <p>
+                    La estoy realizando con Django y
+                    React. Es un CRUD de compañías que incluye endpoints privados y públicos,
+                    autenticación de usuario vía JWT, rutas privadas con React Routes y llamados a api
+                    con Axios
+                  </p>
+                </div>
+                <div class="swiper-slide-left-links">
+                  <a href="" class="project-link">
+                    <div class="project-link-content">
+                      <p class="project-link-text">Visitar</p>
+                    </div>
+                  </a>
+                  <a href="" class="project-link">
+                    <div class="project-link-content">
+                      <p class="project-link-text">Repositorio</p>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="swiper-slide-right">
+                <div class="swiper-slide-right-image-container" data-swiper-parallax="-300">
+                  <img src="images/section-2/countries-app.jpg" alt="">
+                </div>
+              </div>
+            </div>
+            <!-- .SLIDE -->
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      <div class="section-2-pagination">
+        <div class="section-2-pagination--left">
+          <div class="pagination-button pagination-button-disabled" id="pagination-button-prev">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="28"
+              height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <polyline points="15 6 9 12 15 18" />
+            </svg>
+          </div>
+        </div>
+        <div class="section-2-pagination--right">
+          <div class="pagination-button" id="pagination-button-next">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-right" width="28"
+              height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <polyline points="9 6 15 12 9 18" />
+            </svg>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    <section class="section-3 section">
+      <div class="section-3-title">
+        <p class="text-type-1">Skills</p>
+      </div>
+      <div class="section-3-skills">
+        <div class="section-3-skills--skill-column">
+          <!-- ROW -->
+          <div class="skill-row">
+            <div class="skill-row-top" onclick="openSkill(0)">
+              <div class="skill-row-top--title">
+                <p>HTML</p><span>Avanzado</span>
+              </div>
+              <div class="skill-row-top--chevron">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="28"
+                    height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="skill-row-bottom">
+              <div class="skill-row-bottom-container">
+                <p>
+                  Experiencia profesional estructurando sitios webs responsive con HTML5.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- .ROW -->
+          <!-- ROW -->
+          <div class="skill-row">
+            <div class="skill-row-top" onclick="openSkill(1)">
+              <div class="skill-row-top--title">
+                <p>CSS</p><span>Avanzado</span>
+              </div>
+              <div class="skill-row-top--chevron">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="28"
+                    height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="skill-row-bottom">
+              <div class="skill-row-bottom-container">
+                <p>
+                  Experiencia profesional estilando sitios webs de forma responsive y compatibles con todos los
+                  navegadores, incluyendo Safari.
+                  Uso de la lógica de la programacion combinada con estilados (styled-components).
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- .ROW -->
+          <!-- ROW -->
+          <div class="skill-row">
+            <div class="skill-row-top" onclick="openSkill(2)">
+              <div class="skill-row-top--title">
+                <p>JavaScript</p><span>Alto</span>
+              </div>
+              <div class="skill-row-top--chevron">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="28"
+                    height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="skill-row-bottom">
+              <div class="skill-row-bottom-container">
+                <p>
+                  Bucles y condiciones. Eventos, funciones normales y de flecha,
+                  llamados de API con AXIOS, OOP, eventos del DOM. Métodos de cadenas y
+                  de arreglos. Promesas. Uso de Async Await.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- .ROW -->
+          <!-- ROW -->
+          <div class="skill-row">
+            <div class="skill-row-top" onclick="openSkill(3)">
+              <div class="skill-row-top--title">
+                <p>TypeScirpt</p><span>Alto</span>
+              </div>
+              <div class="skill-row-top--chevron">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="28"
+                    height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="skill-row-bottom">
+              <div class="skill-row-bottom-container">
+                <p>
+                  Aplicación del tipado y uso de interfaces
+                  para lograr una mejor organización de la estructura de un objeto o arreglo.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- .ROW -->
+          <!-- ROW -->
+          <div class="skill-row">
+            <div class="skill-row-top" onclick="openSkill(4)">
+              <div class="skill-row-top--title">
+                <p>React</p><span>Intermedio</span>
+              </div>
+              <div class="skill-row-top--chevron">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="28"
+                    height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="skill-row-bottom">
+              <div class="skill-row-bottom-container">
+                <p>
+                  Componentes flecha.
+                  Uso de hooks useState, useEffect, useRef, useMemo, useContext.
+                  React router dom con rutas privadas y parámetros.
+                  Comunicación entre componentes.
+                  Services para llamados a apis.
+                  CRUD con Axios.
+                  Autenticación de usuarios vía JWT.
+                  Formularios, ThemeProvider, Traducciones.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- .ROW -->
+          <!-- ROW -->
+          <div class="skill-row">
+            <div class="skill-row-top" onclick="openSkill(5)">
+              <div class="skill-row-top--title">
+                <p>NextJs</p><span>Principiante</span>
+              </div>
+              <div class="skill-row-top--chevron">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="28"
+                    height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="skill-row-bottom">
+              <div class="skill-row-bottom-container">
+                <p>
+                  Utilización de componentes propios de Next como Link e Image.
+                  getStaticProps, getServerSideProps.
+                  Rutas con parámetros o ID.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- .ROW -->
+          <!-- ROW -->
+          <div class="skill-row">
+            <div class="skill-row-top" onclick="openSkill(6)">
+              <div class="skill-row-top--title">
+                <p>SQL</p><span>Intermedio</span>
+              </div>
+              <div class="skill-row-top--chevron">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="28"
+                    height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="skill-row-bottom">
+              <div class="skill-row-bottom-container">
+                <p>
+                  CRUD de tablas e items de tablas.
+                  Petisiones relacionando tablas separadas con PK.
+                  Condicionales.
+                  Filtros como WHERE, LIKE.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- .ROW -->
+          <!-- ROW -->
+          <div class="skill-row">
+            <div class="skill-row-top" onclick="openSkill(7)">
+              <div class="skill-row-top--title">
+                <p>Python</p><span>Intermedio</span>
+              </div>
+              <div class="skill-row-top--chevron">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="28"
+                    height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="skill-row-bottom">
+              <div class="skill-row-bottom-container">
+                <p>
+                  Funciones, listas, objetos, bucles y condicionales.
+                  POO. Módulos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- .ROW -->
+          <!-- ROW -->
+          <div class="skill-row">
+            <div class="skill-row-top" onclick="openSkill(8)">
+              <div class="skill-row-top--title">
+                <p>Django</p><span>Intermedio</span>
+              </div>
+              <div class="skill-row-top--chevron">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="28"
+                    height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="skill-row-bottom">
+              <div class="skill-row-bottom-container">
+                <p>
+                  Desarrollo de API con endpoints públicos,
+                  con autenticación y con validación de permisos con rest_framework.
+                  Uso de templates. 
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- .ROW -->
+          <!-- ROW -->
+          <div class="skill-row">
+            <div class="skill-row-top" onclick="openSkill(9)">
+              <div class="skill-row-top--title">
+                <p>Inglés</p><span>Intermedio B1</span>
+              </div>
+              <div class="skill-row-top--chevron">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="28"
+                    height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="skill-row-bottom">
+              <div class="skill-row-bottom-container">
+                <p>
+                  Estudié inglés con una docente particular durante 4 años.
+                  Actualmente practico y perfecciono mi oral y fluidez de forma autodidacta.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- .ROW -->
+          <!-- ROW -->
+          <div class="skill-row">
+            <div class="skill-row-top" onclick="openSkill(10)">
+              <div class="skill-row-top--title">
+                <p>Otros</p>
+              </div>
+              <div class="skill-row-top--chevron">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="28"
+                    height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="skill-row-bottom">
+              <div class="skill-row-bottom-container">
+                <p>
+                  También destaco experiencia con Jira, Git, Styled Components,
+                  SwiperJs, React Chart Js, y GSAP.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- .ROW -->
+
+        </div>
+      </div>
+    </section>
     <section></section>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="app/header.js"></script>
+  <script src="app/section-3.js"></script>
+  <script src="app/swiper.js"></script>
 </body>
+
 </html>
