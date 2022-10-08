@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="styles/header-style.css">
   <link rel="stylesheet" href="styles/section-1.css">
   <link rel="stylesheet" href="styles/section-2.css">
+  <link rel="stylesheet" href="styles/section-3.css">
 </head>
 
 <body>
@@ -44,10 +45,10 @@
               <p class="header-right-item--link">Inicio</p>
               <div class="header-right-item--border-bottom"></div>
             </a>
-            <a class="header-right-item" href="">
+            <!-- <a class="header-right-item" href="">
               <p class="header-right-item--link">Sobre mi</p>
               <div class="header-right-item--border-bottom"></div>
-            </a>
+            </a> -->
             <a class="header-right-item" href="">
               <p class="header-right-item--link">Proyectos</p>
               <div class="header-right-item--border-bottom"></div>
@@ -246,11 +247,302 @@
       </div>
 
     </section>
-    <section></section>
+    <section class="section-3 section">
+      <div class="section-3-title">
+        <p class="text-type-1">Skills</p>
+      </div>
+      <div class="section-3-skills">
+        <div class="section-3-skills--skill-column">
+          <!-- ROW -->
+          <div class="skill-row">
+            <div class="skill-row-top" onclick="openSkill(0)">
+              <div class="skill-row-top--title">
+                <p>HTML</p><span>Avanzado</span>
+              </div>
+              <div class="skill-row-top--chevron">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="28"
+                    height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="skill-row-bottom">
+              <div class="skill-row-bottom-container">
+                <p>
+                  Experiencia profesional estructurando sitios webs responsive con HTML5.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- .ROW -->
+          <!-- ROW -->
+          <div class="skill-row">
+            <div class="skill-row-top" onclick="openSkill(1)">
+              <div class="skill-row-top--title">
+                <p>CSS</p><span>Avanzado</span>
+              </div>
+              <div class="skill-row-top--chevron">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="28"
+                    height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="skill-row-bottom">
+              <div class="skill-row-bottom-container">
+                <p>
+                  Experiencia profesional estilando sitios webs de forma responsive y compatibles con todos los
+                  navegadores, incluyendo Safari.
+                  Uso de la lógica de la programacion combinada con estilados (styled-components).
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- .ROW -->
+          <!-- ROW -->
+          <div class="skill-row">
+            <div class="skill-row-top" onclick="openSkill(2)">
+              <div class="skill-row-top--title">
+                <p>JavaScript</p><span>Alto</span>
+              </div>
+              <div class="skill-row-top--chevron">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="28"
+                    height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="skill-row-bottom">
+              <div class="skill-row-bottom-container">
+                <p>
+                  Bucles y condiciones. Eventos, funciones normales y de flecha,
+                  llamados de API con AXIOS, OOP, eventos del DOM. Métodos de cadenas y
+                  de arreglos. Promesas. Uso de Async Await.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- .ROW -->
+          <!-- ROW -->
+          <div class="skill-row">
+            <div class="skill-row-top" onclick="openSkill(3)">
+              <div class="skill-row-top--title">
+                <p>TypeScirpt</p><span>Alto</span>
+              </div>
+              <div class="skill-row-top--chevron">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="28"
+                    height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="skill-row-bottom">
+              <div class="skill-row-bottom-container">
+                <p>
+                  Aplicación del tipado y uso de interfaces
+                  para lograr una mejor organización de la estructura de un objeto o arreglo.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- .ROW -->
+          <!-- ROW -->
+          <div class="skill-row">
+            <div class="skill-row-top" onclick="openSkill(4)">
+              <div class="skill-row-top--title">
+                <p>React</p><span>Intermedio</span>
+              </div>
+              <div class="skill-row-top--chevron">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="28"
+                    height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="skill-row-bottom">
+              <div class="skill-row-bottom-container">
+                <p>
+                  Componentes flecha.
+                  Uso de hooks useState, useEffect, useRef, useMemo, useContext.
+                  React router dom con rutas privadas y parámetros.
+                  Comunicación entre componentes.
+                  Services para llamados a apis.
+                  CRUD con Axios.
+                  Autenticación de usuarios vía JWT.
+                  Formularios, ThemeProvider, Traducciones.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- .ROW -->
+          <!-- ROW -->
+          <div class="skill-row">
+            <div class="skill-row-top" onclick="openSkill(5)">
+              <div class="skill-row-top--title">
+                <p>NextJs</p><span>Principiante</span>
+              </div>
+              <div class="skill-row-top--chevron">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="28"
+                    height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="skill-row-bottom">
+              <div class="skill-row-bottom-container">
+                <p>
+                  Utilización de componentes propios de Next como Link e Image.
+                  getStaticProps, getServerSideProps.
+                  Rutas con parámetros o ID.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- .ROW -->
+          <!-- ROW -->
+          <div class="skill-row">
+            <div class="skill-row-top" onclick="openSkill(6)">
+              <div class="skill-row-top--title">
+                <p>SQL</p><span>Intermedio</span>
+              </div>
+              <div class="skill-row-top--chevron">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="28"
+                    height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="skill-row-bottom">
+              <div class="skill-row-bottom-container">
+                <p>
+                  CRUD de tablas e items de tablas.
+                  Petisiones relacionando tablas separadas con PK.
+                  Condicionales.
+                  Filtros como WHERE, LIKE.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- .ROW -->
+          <!-- ROW -->
+          <div class="skill-row">
+            <div class="skill-row-top" onclick="openSkill(7)">
+              <div class="skill-row-top--title">
+                <p>Python</p><span>Intermedio</span>
+              </div>
+              <div class="skill-row-top--chevron">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="28"
+                    height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="skill-row-bottom">
+              <div class="skill-row-bottom-container">
+                <p>
+                  Funciones, listas, objetos, bucles y condicionales.
+                  POO. Módulos.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- .ROW -->
+          <!-- ROW -->
+          <div class="skill-row">
+            <div class="skill-row-top" onclick="openSkill(8)">
+              <div class="skill-row-top--title">
+                <p>Django</p><span>Intermedio</span>
+              </div>
+              <div class="skill-row-top--chevron">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="28"
+                    height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="skill-row-bottom">
+              <div class="skill-row-bottom-container">
+                <p>
+                  Desarrollo de API con endpoints públicos,
+                  con autenticación y con validación de permisos con rest_framework.
+                  Uso de templates. 
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- .ROW -->
+          <!-- ROW -->
+          <div class="skill-row">
+            <div class="skill-row-top" onclick="openSkill(9)">
+              <div class="skill-row-top--title">
+                <p>Otros</p>
+              </div>
+              <div class="skill-row-top--chevron">
+                <div>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-down" width="28"
+                    height="28" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                    <polyline points="6 9 12 15 18 9" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+            <div class="skill-row-bottom">
+              <div class="skill-row-bottom-container">
+                <p>
+                  También destaco experiencia con Jira, Git, Styled Components,
+                  SwiperJs, React Chart Js, y GSAP.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- .ROW -->
+
+        </div>
+      </div>
+    </section>
     <section></section>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script src="app/header.js"></script>
+  <script src="app/section-3.js"></script>
   <script src="app/swiper.js"></script>
 </body>
 
