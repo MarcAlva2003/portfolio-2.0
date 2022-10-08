@@ -45,9 +45,10 @@
   overflow: hidden;
   line-height: 24px;
   font-size: 18px;
+  transition: all .2s ease;
 }
 .skill-row-open .skill-row-bottom{
-  height: auto;
+  /* height: fit-content; */
   padding-bottom: 20px;
 }
 .skill-row-top--chevron{
@@ -83,5 +84,14 @@
   }
   .skill-row-top{
     height: 60px;
+  }
+}
+
+@keyframes asd{
+  0%{
+    height: 0;
+  }
+  100%{
+    height: fit-content;
   }
 }
