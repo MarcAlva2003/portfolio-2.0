@@ -44,6 +44,10 @@ img{
   font-size: 16px;
   display: flex;
   align-items: center;
+  justify-content: center;
+}
+.project-link-content p{
+  margin-top: 2px;
 }
 .project-link-content:hover{
   background-color: #FFFFFF20;  
@@ -83,14 +87,24 @@ img{
 .pagination-button-disabled:active{
   background-color: #666666;   
 }
-/* .section-1{
-  height: calc(100vh - 100px);
-  background-color: blue;
+.text-type-1{
+  font-size: 40px;
+  font-weight: 600;
 }
-.section-1 img{
-  width: 100%;
+@media (max-width: 1024px){
+  .body-container{
+    padding: 0 40px;
+  }
+  .text-type-1{
+    font-size: 32px;
+
+  }
 }
-.section-2{
-  height: calc(100vh - 100px);
-  background-color: red;
-} */
+@media (max-width: 768px){
+  .body-container{
+    padding: 0 24px;
+  }
+  .text-type-1{
+    font-size: 28px;
+  }
+}

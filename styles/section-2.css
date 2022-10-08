@@ -6,7 +6,7 @@
   /* height: min(600px, calc(100vh - 100px)); */
 }
 .section-2-title{
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   font-size: 32px;
 }
 .section-2-pagination{
@@ -76,4 +76,52 @@
 .project-countries-slide .swiper-slide-right{
   display: flex;
   align-items: center;
+}
+@media (max-width: 992px){
+  .swiper-slide{
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 50px;
+  }
+  .swiper-slide-left{
+    grid-row: 2/3;
+  }
+  .swiper-slide-left-links{
+    flex-wrap: wrap;
+  }
+  .swiper-slide-left-links .project-link{
+    margin-bottom: 12px;
+    width: 100%;
+  }
+  .swiper-slide-left-text{
+    /* font-size: 16px; */
+  }
+}
+@media (max-width: 789px){
+  .section-2-title{
+    border-bottom: 1px solid #FFFFFF30;
+    padding-bottom: 7px;
+  }
+  .section-2-projects{
+    padding: 10px 0;
+  }
+  .swiper-slide{
+    row-gap: 20px;
+  }
+  .swiper-slide-left-separator{
+    margin-bottom: 24px;
+  }
+  .swiper-slide-left-title{
+    font-size: 24px;
+  }
+  .swiper-slide-left-text{
+    font-size: 16px;
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 540px){
+  .swiper-slide-left-text{
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
 }
