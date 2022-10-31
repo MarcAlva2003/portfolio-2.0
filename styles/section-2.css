@@ -57,9 +57,12 @@
 }
 .swiper-slide-left-links{
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .swiper-slide-left-links .project-link{
   margin-right: 12px;
+  margin-bottom: 12px;
 }
 .section-2-pagination--left{
   margin-right: 12px;
